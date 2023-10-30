@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/srinu_babu_folder/Machine_Learning/mlflow/mlruns/0/0a40a272917b495984ac25ba0fc865eb/artifacts
+end_time: 1698666023707
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0a40a272917b495984ac25ba0fc865eb
+run_name: persistent-yak-313
+run_uuid: 0a40a272917b495984ac25ba0fc865eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698666019968
+status: 3
+tags: []
+user_id: Ranga Pavan

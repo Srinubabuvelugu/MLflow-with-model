@@ -65,7 +65,7 @@ class Data_Ingestion:
 
     def get_data(self):
         data=self.read_data() 
-        print(data.head())
+        #print(data.head())
     
     def accuracy(self):
         data = self.read_data()
@@ -73,8 +73,8 @@ class Data_Ingestion:
             
             ## Train_test_split
             train,test = train_test_split(data,test_size=0.25, random_state=11)
-            ## TO save the train, test data sets in artifacts
-            #os.makedirs(self.data_path.arti,exist_ok=True)
+            if not os.path.exists("artifacts"):
+                os.makedirs("artifacts")
             train.to_csv(self.data_path.train_data_path,index=False,header =True)
             test.to_csv(self.data_path.test_data_path,index=False,header = True)
             X_train = train.drop("quality",axis=1)
@@ -100,8 +100,13 @@ class Data_Ingestion:
                     mlflow.log_metrics({"accuracy score":res,
                                    "roc_auc_score":roc
                                    })
-                    mlflow.log_artifact("artifacts", res)
-                    
+                    if not os.path.exists("outputs"):
+                        os.makedirs("outputs")
+                    if os.path.exists("outputs"):
+                        with open("outputs/test.txt", "a+") as f:
+                            f.write(f"n_estimators= {self.n_estimators},max_depth = {self.max_depth},max_leaf_nodes = {self.max_leaf_nodes} ====>> accuracy score:{res} and roc_auc_score: {roc} \n")
+                    mlflow.log_artifacts("outputs")
+                                    
                                    
         except Exception as e:
             print(e)

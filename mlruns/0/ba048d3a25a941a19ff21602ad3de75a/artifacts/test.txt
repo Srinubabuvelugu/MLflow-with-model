@@ -1,0 +1,5 @@
+n_estimators= 100,max_depth = 5,max_leaf_nodes = 2 ====>> accuracy score:0.5625 and roc_auc_score: 0.7776275241322056 
+n_estimators= 100,max_depth = 10,max_leaf_nodes = 2 ====>> accuracy score:0.56 and roc_auc_score: 0.7754761958466755 
+n_estimators= 100,max_depth = 12,max_leaf_nodes = 2 ====>> accuracy score:0.5525 and roc_auc_score: 0.7835010154494335 
+n_estimators= 100,max_depth = 15,max_leaf_nodes = 2 ====>> accuracy score:0.5575 and roc_auc_score: 0.7874296487736041 
+n_estimators= 100,max_depth = 18,max_leaf_nodes = 2 ====>> accuracy score:0.5575 and roc_auc_score: 0.7817881407371697 

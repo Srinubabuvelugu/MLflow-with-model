@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/srinu_babu_folder/Machine_Learning/mlflow/mlruns/0/297d562be32340bfa0b6274ca02f2def/artifacts
+end_time: 1698666071687
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 297d562be32340bfa0b6274ca02f2def
+run_name: dapper-moose-527
+run_uuid: 297d562be32340bfa0b6274ca02f2def
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698666067966
+status: 3
+tags: []
+user_id: Ranga Pavan
